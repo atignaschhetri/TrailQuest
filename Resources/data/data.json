@@ -1,0 +1,62 @@
+{
+  "valid_login": {
+    "email": " ",
+    "password": "!@#$%12345asdfgASDFG",
+    "expected_result": "Login successfully"
+  },
+  "re_login_after_logout": {
+    "email": "ram@gmail.com",
+    "password": "!@#$%12345asdfgASDFG",
+    "expected_result": "User should be able to login again"
+  },
+  "invalid_logins": [
+    {
+      "email": "Ram",
+      "password": "!@#$%12345asdfgASDFG",
+      "expected_message": "These credentials do not match our records."
+    },
+    {
+      "email": "ram",
+      "password": " ",
+      "expected_message": "The password field is required"
+    },
+    {
+      "email": "ram@gmail.com",
+      "password": "123",
+      "expected_message": "These credentials do not match our records."
+    }
+    ],
+
+  "valid_signups": [
+    {
+      "first_name": "Ram",
+      "last_name": "Sharma",
+      "phone": "9845632178",
+      "email": "ram1@gmail.com",
+      "password": "@#12345asdfgASDFG"
+    },
+
+    {
+      "first_name": "Hari",
+      "last_name": "Sharma",
+      "phone": "9845632178",
+      "email": "ram@gmail.com",
+      "password": "@#12345asdfgASDFG"
+    },
+    {
+      "first_name": "Ram",
+      "last_name": "K.C",
+      "phone": "9845632178",
+      "email": "ram@gmail.com",
+      "password": "@#12345asdfgASDFG"
+    }
+  ]
+
+  }
+
+
+
+
+
+
+

@@ -10,9 +10,10 @@ ${PASSWORD_FIELD}    xpath://input[@required and @name="password"]
 
 
 *** Keywords ***
-Open website
-    Open Browser    ${URL}    chrome
-    Maximize Browser Window
+
+#Open website
+#    Open Browser    ${URL}    chrome
+#    Maximize Browser Window
     
 Click login Button
     Click Element    xpath://a[@class="tq-nav-login-btn"]    
@@ -28,5 +29,11 @@ Enter Password
     
 Click Signin Button
     Click Button    //button[@class="tq-btn-primary form-submit"]
+
+
+Check Login Button
+    Page Should Not Contain Element     xpath://a[@class="tq-nav-login-btn"]
+
+
     
     

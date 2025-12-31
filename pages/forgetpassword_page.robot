@@ -5,12 +5,6 @@ Library    SeleniumLibrary
 *** Variables ***
 ${URL}    https://trailquest.global/
 
-
-
-
-
-
-
 *** Keywords ***
 Open website
     Open Browser    ${URL}    chrome
