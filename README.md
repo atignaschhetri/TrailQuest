@@ -37,33 +37,33 @@ Project Directory Structure
    Framework Design
    Page Object Model (POM)
 
-All page-specific locators and actions are placed inside the pages/ folder.
+ - All page-specific locators and actions are placed inside the pages/ folder.
 
-Improves reusability and maintainability.
+ - Improves reusability and maintainability.
 
- Keyword-Driven Framework
+ - Keyword-Driven Framework
 
-Common actions are written as reusable keywords in global_keyword.robot.
+ - Common actions are written as reusable keywords in global_keyword.robot.
 
-Test cases remain clean and readable.
+ - Test cases remain clean and readable.
 
-Screenshot on Failure
+ - Screenshot on Failure
 
-Screenshots are automatically captured when a test fails.
+ - Screenshots are automatically captured when a test fails.
 
-Stored under Result/screenshots/.
+ - Stored under Result/screenshots/.
 
-Test Coverage
+ - Test Coverage
 
-The automation suite currently covers:
+ - The automation suite currently covers:
 
-Login functionality
+ - Login functionality
 
-Sign-up functionality
+ - Sign-up functionality
 
-Forgot Password functionality
+ - Forgot Password functionality
 
-Test cases for Project
+ - Test cases for Project
 
 Please follow the link to access the test cases for this project 
 
