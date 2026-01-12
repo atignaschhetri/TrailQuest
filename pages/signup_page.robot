@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${LOC_FIRST_NAME}    xpath://input[@name="first_name"]
-${LOC_LAST_NAME}     xpath://input[@name="last_name1"]
+${LOC_LAST_NAME}     xpath://input[@name="last_name"]
 ${LOC_PHONE}         xpath://input[@name="phone"]
 ${LOC_EMAIL}         xpath://label[normalize-space(text())="Email address"]/following-sibling::input
 ${LOC_PASSWORD}      xpath://input[@name="password"]

@@ -1,3 +1,6 @@
 selenium
 robotframework
 robotframework-seleniumlibrary
+pandas
+openpyxl
+
