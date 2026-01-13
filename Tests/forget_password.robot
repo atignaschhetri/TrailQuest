@@ -3,6 +3,7 @@ Library    SeleniumLibrary
 Resource    ../pages/forgetpassword_page.robot
 
 
+
 *** Test Cases ***
 Forget password
     [Tags]    smoke    login    positive

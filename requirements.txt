@@ -3,4 +3,4 @@ robotframework
 robotframework-seleniumlibrary
 pandas
 openpyxl
-
+robotframework-jsonlibrary

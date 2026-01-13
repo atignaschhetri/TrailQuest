@@ -8,5 +8,5 @@ Test Teardown    Capture Screenshot And Close Browser
 *** Test Cases ***
 add to cart
      [Tags]    smoke    login    positive
-    Open Website
+    Open Browser Headless
     Add To Cart
