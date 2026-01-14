@@ -10,9 +10,11 @@ ${LOC_PASSWORD}      xpath://input[@name="password"]
 
 *** Keywords ***
 Click Login Button
+    Wait Until Element Is Visible    xpath://a[@class="tq-nav-login-btn"]    10s    
     Click Element    xpath://a[@class="tq-nav-login-btn"]
 
 Click SignUp For Free
+    Wait Until Element Is Visible    xpath://a[@class="tq-link-accent"]    11s
     Click Element    xpath://a[@class="tq-link-accent"]
 
 Enter Firstname
@@ -37,7 +39,7 @@ Enter Password
     Input Text    ${LOC_PASSWORD}    ${password}
 
 Click CheckBox
-    Wait Until Element Is Visible    xpath://label[@class="tq-checkbox"]    10s
+    Wait Until Element Is Visible    xpath://label[@class="tq-checkbox"]    20s
     Scroll Element Into View         xpath://label[@class="tq-checkbox"]
     Click Element                    xpath://label[@class="tq-checkbox"]
 

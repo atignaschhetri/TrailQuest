@@ -20,7 +20,7 @@ Click login Button
     
 Enter Email
     [Arguments]    ${email} 
-    Wait Until Element Is Visible    ${EMAIL_FIELD}    5s
+    Wait Until Element Is Visible    ${EMAIL_FIELD}    15s
     Input Text    ${EMAIL_FIELD}    ${email}
     
 Enter Password
@@ -28,6 +28,7 @@ Enter Password
     Input Text    ${PASSWORD_FIELD}    ${password}
     
 Click Signin Button
+    Wait Until Element Is Visible    //button[@class="tq-btn-primary form-submit"]    10s    
     Click Button    //button[@class="tq-btn-primary form-submit"]
 
 
