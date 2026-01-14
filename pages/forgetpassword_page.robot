@@ -11,6 +11,7 @@ Open website
     Maximize Browser Window
 
 Click login Button
+    Wait Until Element Is Visible    xpath://a[@class="tq-nav-login-btn"]    15s
     Click Element    xpath://a[@class="tq-nav-login-btn"]
     
 Click Forget Button
