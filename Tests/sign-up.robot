@@ -29,14 +29,17 @@ Multiple Valid Signup Test
         ${password}=    Get From Dictionary    ${user}    password
 
         Open Website
+        Wait Until Element Is Visible        10s
         Click Login Button
-        Click SignUp For Free
+        Wait Until Element Is Visible        20s
+        Click SignUp For Free    
 
         Enter Firstname       ${first_name}
         Enter Lastname        ${last_name}
         Enter Phone           ${phone}
         Enter Email_Address   ${email}
         Enter Password        ${password}
+        Wait Until Element Is Visible        20s
         Click CheckBox
 
 

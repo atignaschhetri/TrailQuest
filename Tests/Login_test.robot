@@ -40,9 +40,11 @@ Invalid Login Test
         ${expected}=   Get From Dictionary    ${item}    expected_message
         Open Website
         Click Login Button
+        Wait Until Element Is Visible        15s
         Enter Email        ${email}
         Enter Password     ${password}
         Click Signin Button
+        Wait Until Element Is Visible        20s
 
         Wait Until Page Contains    ${expected}    10s
 
