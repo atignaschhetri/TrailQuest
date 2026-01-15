@@ -14,7 +14,15 @@ Click login Button
     Click Element    xpath://a[@class="tq-nav-login-btn"]
 
 Click Forget Button
-    Click Element    xpath://a[contains(@href,"forgot-password")]
+    # Wait until the element is visible
+    Wait Until Element Is Visible    xpath://a[contains(@href,"forgot-password")]    timeout=10s
+    # Wait until the element is enabled/clickable
+    Wait Until Element Is Enabled    xpath://a[contains(@href,"forgot-password")]    timeout=10s
+    # Scroll it into view (optional but safer)
+    Scroll Element Into View         xpath://a[contains(@href,"forgot-password")]
+    # Now click
+    Click Element                    xpath://a[contains(@href,"forgot-password")]
+
 
 #Verify
 #    Wait Until Element Is Visible    https://trailquest.global/forgot-password    5s
