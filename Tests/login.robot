@@ -16,7 +16,7 @@ ${DATA_FILE}    ${CURDIR}/../Resources/data/data.json
 Valid Login Test
     [Tags]    smoke    login    positive
     Open Website
-    Click Login Button
+    Open Login Page
 
     ${data}=       Load Json From File    ${DATA_FILE}
     ${valid}=      Get From Dictionary    ${data}    valid_login
@@ -58,7 +58,7 @@ Invalid Login Test
 
 #        global_keyword.
         Open website
-        Click Login Button
+        Open Login Page
         Enter Email        ${email}
         Enter Password     ${password}
         Click Signin Button
