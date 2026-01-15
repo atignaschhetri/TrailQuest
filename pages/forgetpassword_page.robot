@@ -9,6 +9,7 @@ ${URL}    https://trailquest.global/
 Open website
     Open Browser    ${URL}    chrome
     Maximize Browser Window
+    Sleep    3s
 
 Click Login Button
     # Wait for login button to be visible and clickable
@@ -16,6 +17,7 @@ Click Login Button
     Wait Until Element Is Enabled    xpath://a[@class="tq-nav-login-btn"]    timeout=15s
     Scroll Element Into View         xpath://a[@class="tq-nav-login-btn"]
     Click Element                    xpath://a[@class="tq-nav-login-btn"]
+    Sleep    2s
 
 
 Click Forget Button
