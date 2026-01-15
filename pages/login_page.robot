@@ -12,10 +12,13 @@ ${PASSWORD_FIELD}    xpath://input[@required and @name="password"]
 #Open website
 #    Open Browser    ${URL}    chrome
 #    Maximize Browser Window
-    
-Click login Button
-    Click Element    xpath://a[@class="tq-nav-login-btn"]    
-    
+
+
+Open Login Page
+    Open Browser    https://trailquest.global/login    chrome    options=add_argument("--headless=new")    options=add_argument("--window-size=1920,1080")
+    Sleep    2s
+
+
 Enter Email
     [Arguments]    ${email} 
     Wait Until Element Is Visible    ${EMAIL_FIELD}    5s
