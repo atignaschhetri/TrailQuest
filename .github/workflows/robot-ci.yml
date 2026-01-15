@@ -32,3 +32,10 @@ jobs:
         with:
           name: robot-report
           path: Result/**
+
+      # ← Add this step to upload the CI debug screenshot
+      - name: Upload CI Debug Screenshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-screenshot
+          path: Result/ci_debug_screenshot.png
