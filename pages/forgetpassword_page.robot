@@ -7,7 +7,7 @@ ${URL}    https://trailquest.global/
 
 *** Keywords ***
 Open website
-    Open Browser    ${URL}    chrome
+    Open Browser    ${URL}    chrome    options=add_argument("--headless")    options=add_argument("--window-size=1920,1080")
     Maximize Browser Window
     Sleep    3s
 
