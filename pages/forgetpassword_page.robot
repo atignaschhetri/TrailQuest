@@ -10,6 +10,7 @@ Open website
     Open Browser    ${URL}    chrome    options=add_argument("--headless=new")    options=add_argument("--window-size=1920,1080")
     Maximize Browser Window
     Sleep    3s
+
     Capture Page Screenshot    path=Result/ci_debug_screenshot.png
 
 Click Login Button
