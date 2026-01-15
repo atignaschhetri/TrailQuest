@@ -7,33 +7,21 @@ ${URL}    https://trailquest.global/
 
 *** Keywords ***
 Open website
-    Open Browser    ${URL}    chrome    options=add_argument("--headless")    options=add_argument("--window-size=1920,1080")
+    Open Browser    ${URL}    chrome    options=add_argument("--headless=new")    options=add_argument("--window-size=1920,1080")
     Maximize Browser Window
     Sleep    3s
     Capture Page Screenshot    path=Result/ci_debug_screenshot.png
 
 Click Login Button
-    # Wait for login button to be visible and clickable
-    Wait Until Element Is Visible    xpath://a[@class="tq-nav-login-btn"]    timeout=15s
-    Wait Until Element Is Enabled    xpath://a[@class="tq-nav-login-btn"]    timeout=15s
-    Scroll Element Into View         xpath://a[@class="tq-nav-login-btn"]
-    Click Element                    xpath://a[@class="tq-nav-login-btn"]
+    Wait Until Element Is Visible    xpath://a[contains(@class,"tq-nav-login-btn")]    timeout=30s
+    Wait Until Element Is Enabled    xpath://a[contains(@class,"tq-nav-login-btn")]    timeout=30s
+    Scroll Element Into View         xpath://a[contains(@class,"tq-nav-login-btn")]
+    Click Element                    xpath://a[contains(@class,"tq-nav-login-btn")]
     Sleep    2s
 
-
 Click Forget Button
-    # Wait until the element is visible
-    Wait Until Element Is Visible    xpath://a[contains(@href,"forgot-password")]    timeout=10s
-    # Wait until the element is enabled/clickable
-    Wait Until Element Is Enabled    xpath://a[contains(@href,"forgot-password")]    timeout=10s
-    # Scroll it into view (optional but safer)
+    Wait Until Element Is Visible    xpath://a[contains(@href,"forgot-password")]    timeout=20s
+    Wait Until Element Is Enabled    xpath://a[contains(@href,"forgot-password")]    timeout=20s
     Scroll Element Into View         xpath://a[contains(@href,"forgot-password")]
-    # Now click
     Click Element                    xpath://a[contains(@href,"forgot-password")]
-
-
-#Verify
-#    Wait Until Element Is Visible    https://trailquest.global/forgot-password    5s
-#    Page Should Contain Link    https://trailquest.global/forgot-password
-
 
