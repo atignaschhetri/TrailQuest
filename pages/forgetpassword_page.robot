@@ -10,8 +10,13 @@ Open website
     Open Browser    ${URL}    chrome
     Maximize Browser Window
 
-Click login Button
-    Click Element    xpath://a[@class="tq-nav-login-btn"]
+Click Login Button
+    # Wait for login button to be visible and clickable
+    Wait Until Element Is Visible    xpath://a[@class="tq-nav-login-btn"]    timeout=15s
+    Wait Until Element Is Enabled    xpath://a[@class="tq-nav-login-btn"]    timeout=15s
+    Scroll Element Into View         xpath://a[@class="tq-nav-login-btn"]
+    Click Element                    xpath://a[@class="tq-nav-login-btn"]
+
 
 Click Forget Button
     # Wait until the element is visible
