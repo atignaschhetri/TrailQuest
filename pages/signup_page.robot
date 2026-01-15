@@ -41,3 +41,7 @@ Click CheckBox
     Scroll Element Into View         xpath://label[@class="tq-checkbox"]
     Click Element                    xpath://label[@class="tq-checkbox"]
 
+
+Open Signup Page
+    Open Browser    https://trailquest.global/register    chrome    options=add_argument("--headless=new")    options=add_argument("--window-size=1920,1080")
+    Sleep    2s
