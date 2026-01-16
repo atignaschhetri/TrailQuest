@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource   ../Resources/keyword/global_keyword.robot
-Resource    ../pages/add_to_cart.robot
+Resource    ../pages/add_to_cart_page.robot
 
 Test Teardown    Capture Screenshot And Close Browser
 

@@ -5,6 +5,8 @@ Library    OperatingSystem
 Library    BuiltIn
 
 
+
+
 *** Variables ***
 ${URL}    https://trailquest.global/
 ${SCREENSHOT_PATH}    C:/Users/Hp/PycharmProjects/Automation/Result/screenshots
