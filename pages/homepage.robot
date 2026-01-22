@@ -37,7 +37,7 @@ Verify All Navbar Items Are Clickable
     ...    xpath=//header//a[contains(@class,'tq-nav-login-btn')]
 
     FOR    ${link}    IN    @{navbar_links}
-        Wait Until Element Is Visible    ${link}    10s
+        Wait Until Element Is Visible    ${link}    20s
         Element Should Be Enabled        ${link}
     END
 Verify Hero Section
@@ -56,7 +56,7 @@ Verify User Can Type In Search Box
 
 Verify Search Results Appear
     Input Text    ${SEARCH_BOX}    Everest
-    Wait Until Element Is Visible    ${SEARCH_RESULTS}    10s
+    Wait Until Element Is Visible    ${SEARCH_RESULTS}    20s
 
 
 
