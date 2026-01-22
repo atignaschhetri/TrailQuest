@@ -28,6 +28,10 @@ Multiple Valid Signup Test
         ${email}=         Get From Dictionary    ${user}    email
         ${password}=      Get From Dictionary    ${user}    password
 
+        Open Website
+        Click Login Button
+        Click SignUp For Free
+
         Enter Firstname       ${first_name}
         Enter Lastname        ${last_name}
         Enter Phone           ${phone}
